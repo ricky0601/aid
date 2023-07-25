@@ -1,0 +1,265 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, textarea, p, blockquote, th, td, input, select, button {
+    margin: 0;
+    padding: 0;
+}
+dl, ul, ol, menu, li {
+    list-style: none;
+}
+a:active, a:hover, a:visited {
+    text-decoration: none;
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+small {
+    font-size: smaller;
+}
+button {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+.pc_swhead .list_gnb .on .txt_item, .pc_swhead .list_gnb .on .txt_g {
+    position: relative;
+}
+#pcSWHead{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 10000;
+    border-bottom: 1px solid #E3E4E5;
+    background-color: #fff;
+}
+#pcSWHead .pc_swhead{
+    width: 1280px;
+    height: 80px;
+    margin: 0 auto;
+}
+.pc_swhead .gift_bi{
+    float: left;
+    padding-right: 5px;
+}
+.pc_swhead .link_home{
+    display: block;
+    padding-right: 20px;
+    padding-top: 24px;
+    font-size: 24px;
+}
+.pc_swhead .gift_gnb{
+    float: left;
+}
+.screen_out{
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+.pc_swhead .list_gnb{
+    font-size: 0;
+}
+.pc_swhead .list_gnb li {
+    display: inline-block;
+    vertical-align: top;
+}
+.pc_swhead .list_gnb .link_item {
+    padding: 31px 16px 29px;
+    letter-spacing: -.03em;
+    display: block;
+    position: relative;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000;
+}
+.pc_swhead .list_gnb .on .txt_item:before {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: #ADD8E6;
+    content: "";
+}
+.pc_swhead .gift_utils{
+    float: right;
+    height: 100%;
+    font-size: 0;
+    text-align: right;
+}
+.pc_swhead .box_login {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+}
+.pc_swhead .link_login {
+    display: block;
+    padding: 31px 0 29px 15px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333;
+}
+.wrap_home #swContent {
+    width: auto;
+    padding-bottom: 350px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 81px 0 370px;
+    box-sizing: border-box;
+}
+.wrap_home .area_home_profile{
+	position: relative;
+	background-color: #E0FFFF;
+}
+.wrap_home .area_home_profile:before{
+	position: absolute;
+    left: 0;
+    right: 0;
+	bottom: -90px;
+    height: 90px;
+    background-color: #E0FFFF;
+    z-index: 10;
+    content: "";
+}
+.wrap_home_profile{
+	width: 1040px;
+    margin: 0 auto;
+    padding: 82px 0 75px;
+}
+.wrap_home_profile .inner_home_profile{
+	height: 104px;
+	display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+.wrap_home_profile .cell_home_profile{
+	display: table-cell;
+    position: relative;
+	padding_left: 120px;
+	vertical-align: middle;
+}
+.wrap_home_profile .tit_home_profile{
+	max-height: 104px;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 52px;
+    color: #222;
+    letter-spacing: normal;
+}
+.wrap_home .area_g:last-child {
+    padding-bottom: 0;
+}
+.wrap_home .area_home_theme {
+    padding: 0;
+    border-top: none;
+}
+.wrap_home .area_g {
+    width: 1280px;
+    margin: 0 auto;
+}
+.area_home_theme .wrap_home_theme {
+    padding: 0;
+    text-align: center;
+}
+.wrap_home_theme .inner_home_theme {
+    height: auto;
+    padding: 50px 128px 0;
+    border-radius: 16px;
+    border-color: #eaedf2;
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+    border: 1px solid #ededed;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+.list_home_theme {
+    margin-bottom: 0;
+}
+.list_home_theme li {
+    width: 200px;
+    padding: 0 25px 50px;
+    box-sizing: content-box;
+    display: inline-block;
+}
+
+li:nth-child(4n+1){
+    padding-left:0;
+}
+
+.pdp{
+    width: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+#pcSWFoot{
+	/*position: absolute;*/
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fafafc;
+}
+#pcSWFoot .pc_kfoot{
+	overflow: hidden;
+    width: 1280px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+.pc_kfoot .gift_bi {
+    float: left;
+    width: 171px;
+}
+.pc_kfoot .gift_info {
+    float: left;
+    padding-top: 2px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #999;
+}
+.pc_kfoot .list_info {
+    font-size: 0;
+}
+.pc_kfoot .list_info dt, .pc_kfoot .list_info dd {
+	letter-spacing: -.07em;
+    display: inline-block;
+    margin-bottom: 2px;
+    font-size: 12px;
+    vertical-align: top;
+}
+.pc_kfoot .copyright_info {
+    display: block;
+    padding: 6px 0 8px;
+    font-size: 12px;
+}
+.pc_kfoot .link_kakao {
+    color: #a6a6a6;
+}
+.pc_kfoot .desc_foot {
+    display: block;
+    padding-bottom: 16px;
+    font-size: 12px;
+    letter-spacing: -.036em;
+    line-height: 18px;
+    color: #a6a6a6;
+}
+.pc_kfoot .mark_info {
+    display: block;
+}
+.pc_kfoot .img_systemmark {
+    margin: 5px 0 0 22px;
+}

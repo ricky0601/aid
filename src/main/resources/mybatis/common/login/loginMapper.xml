@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo.common.login.dao.LoginDao">
+
+    <!-- 로그인 회원 정보 조회 -->
+    <select id="selectMemberForLogin" parameterType="java.util.HashMap" resultType="java.util.HashMap">
+        SELECT
+            USERID,
+            NAME,
+            USER_TYPE,
+            EMAIL
+        FROM
+            MEMBER
+        WHERE
+            USERID = #{id}
+            AND PASSWORD = #{password}
+            AND USER_STATUS = 'N'
+    </select>
+
+    <!-- 회원 최근 로그인 일시 정보 갱신 -->
+    <update id="updateMemberRecentLoginDatetime" parameterType="java.util.HashMap">
+        UPDATE MEMBER
+        SET
+            LOGIN_DT = NOW()
+        WHERE
+            USERID = #{id}
+    </update>
+</mapper>
